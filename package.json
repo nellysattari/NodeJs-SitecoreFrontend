@@ -1,0 +1,78 @@
+{
+  "name": "Simulate-Sitecore-structure-html-sass-js",
+  "version": "1.0.0",
+  "description": "An automation template for HTML, CSS, Sass, and JavaScript.",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassChallenger": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js compileCSSForDev",
+    "serve": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js serve",
+    "jsChallenger": "webpack --config src/Project/challenger/code/webpack.config.babel.js  --watch",
+    "jsChallenger:prod": "webpack -p --config src/Project/challenger/code/webpack.config.babel.js ",
+    "debug": "node-nightly --inspect --debug-brk ./node_modules/webpack/bin/webpack.js  --config src/Project/challenger/code/webpack.config.babel.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "gulp",
+    "automation",
+    "template",
+    "html",
+    "css",
+    "sass",
+    "javascript",
+    "sitecore UI"
+  ],
+  "author": "Nelly Sattari",
+  "license": "ISC",
+  "contributors": [
+    {
+      "name": "Nelly Sattari",
+      "email": "nsattari@challenger.com.au",
+      "url": ""
+    }
+  ],
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "glob": "^7.1.2",
+    "glob-all": "^3.1.0",
+    "gulp-html-import": "0.0.2",
+    "gulp-inject": "^4.3.2",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+  
+    "material-design-icons": "^3.0.1",
+    "path": "^0.12.7",
+    "run-sequence": "^2.2.1",
+    "sass-loader": "^7.0.1",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-validator": "^3.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "browser-sync": "^2.24.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-eslint": "^4.0.2",
+    "gulp-html": "^0.5.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "ts-loader": "^4.3.0",
+    "handlebars": "^4.0.11"
+  }
+}

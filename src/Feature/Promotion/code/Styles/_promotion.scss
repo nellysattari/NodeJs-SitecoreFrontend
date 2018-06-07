@@ -1,0 +1,27 @@
+  // This piece of code never get compiled unless it is @include 
+  // EX:  Project\Challenger\code\styles\challenger-theme\components\_promotion.scss includes it
+  //   .promotion {
+  //       @extend .d-flex;
+  //       @extend .flex-column;
+  //       @extend .justify-content-center;
+  //       @extend .align-items-end;
+  //   }
+  // 
+  @mixin theme($themeName, $textColor) {
+      .#{$themeName} {
+          &.component.full-width-promotion {
+              //   div.container {
+              // height: map-get($challenger-size-vars, 'medium');
+              p {
+                  color: $textColor;
+              }
+              @include media-breakpoint-down(sm) {
+                  p {
+                      color: $gray-900 !important;
+                  }
+              } //   }
+          }
+      }
+  }
+
+  @include theme("default", $blue);
