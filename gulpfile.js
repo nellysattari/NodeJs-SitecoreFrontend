@@ -17,7 +17,7 @@ gulp.task('Serve-the-site', (callback) => {
 });
 
 gulp.task('Compile-Challenger-Sass-Resources', (callback) => {
-    exec('npm run Sass-challenger', (err, stdout, stderr) => {
+    exec('npm run sassChallenger', (err, stdout, stderr) => {
       console.log(stdout);
       if (stderr) {
         console.log(stderr);
