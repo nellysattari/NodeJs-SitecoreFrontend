@@ -49,7 +49,6 @@
     "gulp-inject": "^4.3.2",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
-  
     "material-design-icons": "^3.0.1",
     "path": "^0.12.7",
     "run-sequence": "^2.2.1",

@@ -67,5 +67,5 @@ https://webpack.js.org/plugins/provide-plugin/#usage-jquery
 
 
 ## HandleBar
-We try to simulate the mvc views so it means that we would need to assign some classes and attributes . 
+We try to simulate the mvc views (Razor) so it means that we would need to assign some classes and attributes . 
 If it didnot work for firfox lets input the code to this website and recieve the renedered code and then test it http://tryhandlebarsjs.com/
