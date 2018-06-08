@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sassChallenger": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js compileCSSForDev",
     "serve": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js serve",
-    "jsChallenger": "webpack --config src/Project/challenger/code/webpack.config.babel.js  --watch",
+    "jsChallenger": "./node_modules/.bin/webpack --config ./src/Project/challenger/code/webpack.config.babel.js  --watch",
     "jsChallenger:prod": "webpack -p --config src/Project/challenger/code/webpack.config.babel.js ",
     "debug": "node-nightly --inspect --debug-brk ./node_modules/webpack/bin/webpack.js  --config src/Project/challenger/code/webpack.config.babel.js"
   },
